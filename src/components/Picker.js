@@ -130,6 +130,7 @@ function Picker({
     props = {},
     itemProps = {},
     badgeProps= {},
+    itemLabelProps = {},
     modalProps = {},
     flatListProps = {},
     scrollViewProps = {},
@@ -1446,6 +1447,7 @@ function Picker({
                 disabled={item?.[_schema.disabled] ?? false}
                 custom={item.custom ?? false}
                 props={itemProps}
+                labelProps={itemLabelProps}
                 isSelected={isSelected}
                 IconComponent={IconComponent}
                 TickIconComponent={_TickIconComponent}
@@ -1493,6 +1495,7 @@ function Picker({
         multiple,
         itemProps,
         categorySelectable,
+        itemLabelProps,
         onPressItem,
         theme,
         THEME
