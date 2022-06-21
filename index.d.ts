@@ -238,7 +238,7 @@ declare module 'react-native-dropdown-picker' {
     props?: TouchableOpacityProps;
     itemProps?: TouchableOpacityProps;
     badgeProps?: TouchableOpacityProps;
-    itemLabelProps?: StyleProp<TextStyle>;
+    itemLabelProps?: TextProps;
     modalProps?: ModalProps;
     flatListProps?: Partial<FlatListProps<ItemType<T>>>;
     scrollViewProps?: ScrollViewProps;
