@@ -896,7 +896,7 @@ function Picker({
     const SimpleBodyComponent = useMemo(() => (
         <>
             {SelectedItemIconComponent}
-            <Text style={_labelStyle} {...labelProps}>
+            <Text style={_labelStyle} {...labelProps} {...itemLabelProps} >
                 {_selectedItemLabel}
             </Text>
         </>
